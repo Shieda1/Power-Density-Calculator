@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Density Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="powerdensityRadio" name="variables" checked>
+  <label for="powerdensityRadio">Power density</label>
+
+  <input type="radio" id="antennaPowerInputRadio" name="variables">
+  <label for="antennaPowerInputRadio">Antenna Power Input</label>
+
+  <input type="radio" id="antennaPowerGainRadio" name="variables">
+  <label for="antennaPowerGainRadio">Antenna Power Gain</label>
+
+  <input type="radio" id="distancetoCenterofRadiationofAntennaRadio" name="variables">
+  <label for="distancetoCenterofRadiationofAntennaRadio">Distance to Center of Radiation of Antenna</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(P) Antenna Power Input (mW)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(G) Antenna Power Gain</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(R) Distance to Center of Radiation of Antenna (cm)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
